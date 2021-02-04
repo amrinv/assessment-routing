@@ -1,9 +1,7 @@
 import React from "react";
 
 function Error(props) {
-  let error = "404 - Not Found!";
-
-  return <div className="Error">{error}</div>;
+  return <div className="Error">404 - Not Found!</div>;
 }
 
 export default Error;

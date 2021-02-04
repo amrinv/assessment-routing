@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div>
         <Navigation />
-        <switch>
+        <Switch>
           <Route
             exact
             path="/"
@@ -21,8 +21,8 @@ class App extends Component {
           <Route path="/clock" component={Clock} />
           <Route path="/contact" component={Contact} />
           <Route path="/welcome/:name" component={Welcome} />
-          <Route path="/:name" component={Error} />
-        </switch>
+          <Route component={Error} />
+        </Switch>
       </div>
     );
   }
